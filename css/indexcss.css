@@ -1,0 +1,363 @@
+@charset "EUC-KR";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+
+
+html, body {
+	height: 98%;
+	margin: 0px;
+	width: 100%;
+}
+
+
+table {
+	width: 100%;
+	height: 100%;
+}
+
+.button {
+	font-size: 8vmin; 
+	width: 102%;
+	height: 115%; 
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: #ffffff;
+	margin-bottom: 10%;
+	background-color: #b6b6b6;
+	border-color: #b6b6b6;
+	border: 0;
+	outline: 0;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.buttonp {
+	font-size: 8vmin; 
+	color: #000000; 
+	width: 102%;
+	height: 115%; 
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: #ffffff;
+	margin-bottom: 10%;
+	background-color: #d47d7b;
+	border-color: #d47d7b;
+	border: 0;
+	outline: 0;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.buttona {
+	font-size: 8vmin; 
+	color: #000000; 
+	width: 102%;
+	height: 115%; 
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: #ffffff;
+	margin-bottom: 10%;
+	background-color: #64b993;
+	border-color: #64b993;
+	border: 0;
+	outline: 0;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.pointtext {
+	font-size: 4vmin; 
+	color: #b6b6b6; 
+	width: 102%;
+	height: 80%; 
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #f3f3f3;
+	border-color: #f3f3f3;
+	border: 0;
+	outline: 0;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.pointtextp {
+	font-size: 4vmin; 
+	color: #d47d7b; 
+	width: 102%;
+	height: 80%; 
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #ffe9e9;
+	border-color: #ffe9e9;
+	border: 0;
+	outline: 0;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.pointtexta {
+	font-size: 4vmin; 
+	color: #64b993; 
+	width: 102%;
+	height: 80%; 
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #ddfff0;
+	border-color: #ddfff0;
+	border: 0;
+	outline: 0;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.resultp1w{
+	border: 2px solid #ecae62;
+	border-top: 1px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.resultp2w{
+	border: 2px solid #f5d17e;
+	border-top: 1px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+.resultpw{
+	border: 2px solid #e1e1e1;
+	border-top: 1px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+
+.result {
+	text-align: center;
+	width: 40%;
+	border: none;
+	border-right: 0px;
+	border-top: 0px;
+	background-Color: #ffffff;
+	color: #000000;
+	font-size: 20vmin;
+	margin-top:2%;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.resultPC {
+	text-align: center;
+	width: 10%;
+	height: 19%;
+	font-size: 5vmin;
+	color: #d47d7b;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #ffe9e9;
+	border-color: #ffe9e9;
+	border: 0;
+	outline: 0;
+	margin-bottom: 2%;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.resultP {
+	text-align: center;
+	width: 10%;
+	height: 19%;
+	font-size: 5vmin;
+	color: #ffffff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #d47d7b;
+	border-color: #d47d7b;
+	border: 0;
+	outline: 0;
+	margin-bottom: 2%;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.resultAC {
+	text-align: center;
+	width: 10%;
+	height: 19%;
+	font-size: 5vmin;
+	color: #64b993;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #ddfff0;
+	border-color: #ddfff0;
+	border: 0;
+	outline: 0;
+	margin-bottom: 2%;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.resultA {
+	text-align: center;
+	width: 10%;
+	height: 19%;
+	font-size: 5vmin;
+	color: #ffffff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #64b993;
+	border-color: #64b993;
+	border: 0;
+	outline: 0;
+	margin-bottom: 2%;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.logbutton {
+	font-size: 4vmin;
+	color: #ffffff;
+	border-radius: 5px;
+	background-color: #e89c9e;
+	border-color: #e89c9e;
+	border: 0;
+	outline: 0;
+	width: 88%;
+	height: 45%;
+	margin-top: 30%;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+
+.tbutton {
+	font-size: 4vmin;
+	border-radius: 5px;
+	background-color: #e89c9e;
+	border-color: #e89c9e;
+	border: 0;
+	outline: 0;
+	width: 94%;
+	height: 45%;
+	margin-top: 28%;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+}
+
+.textbox {
+	border: none;
+	border-right: 0px;
+	border-top: 0px;
+	text-align: center;
+	font-size: 8vmin;
+	width: 97%;
+	height: 90%;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+	
+}
+
+.gametime {
+	text-align: center;
+	width: 97%;
+	height: 90%;
+	color: #ffffff;
+	font-size: 2.5em;
+	display: inline;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #4b426a;
+	border: #4b426a;
+	font-family: 'Nanum Square';
+	font-weight : 700;
+	
+}
+
+.cssmainall {
+	width: 98%;
+	height: 100%;
+	padding-left: 1%;
+}
+
+.cssmaintop {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	margin-bottom:1%;
+}
+
+.cssmainbot {
+	width: 100%;
+	height: 75%;
+}
+
+.csslogbtn {
+	width: 16%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.csslogsel {
+	width: 22%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.csstime {
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.cssstartbtn {
+	width: 18%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.cssendbtn {
+	width: 18%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.csstable {
+	height: 100%;
+	width: 100%;
+}
+
+.select {
+	display: inline;
+	height: 45%;
+	margin-top: 22%;
+	padding:3%;
+	width: 97%;
+	background:url('button.png');
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center right;
+    color:#4b426a;
+	border: 1px solid #4b426a;
+	border-radius: 5px;
+	-webkit-appearance: none;
+	font-size: 1em; 
+}
+
+dropdown {
+size: 5;
+}
+    
+select::-ms-expand {
+	display: none;
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>ScoreBoard</title>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="css/indexcss.css"></link>
+<script src="js/indexjs.js"></script>
+</head>
+<body>
+	<div class="cssmainall">
+		<div class="cssmaintop">
+
+			<div class="csslogbtn">
+				<input type="button" id="logbutton" class="logbutton" value="LOGDEL"
+					onclick="logremove();">
+			</div>
+
+			<div class="csslogsel">
+
+				<SELECT autofocus id="log" class="select">
+					<option value="not">0개의 항목</option>
+				</SELECT>
+
+			</div>
+
+			<div class="csstime">
+				<input type="text" id="gametime" placeholder="05:00" maxlength="4"
+					class="gametime">
+			</div>
+
+			<div class="cssstartbtn">
+				<button id="startPause" class="tbutton" onclick="startPause()"
+					style="color: #000000;">
+					<font id="start">START</font>
+				</button>
+			</div>
+
+			<div class="cssendbtn">
+				<button onclick="endreset()" class="tbutton" id="endreset" disabled
+					style="color: #ffffff;">
+					<font id="end">END</font>
+				</button>
+			</div>
+		</div>
+		<div class="cssmainbot">
+			<form class="csstable" id="tableall">
+				<table border="0"
+					style="border-collapse: separate; align: center; border-spacing: 5px 0px;">
+					<tr height="20%">
+						<th colspan=5
+							style="background-color: #ecae62; border-color: #ecae62; border-top-left-radius: 5px; border-top-right-radius: 5px;"><input
+							type=text id="name1" class="textbox" placeholder="Player1"
+							style="background-color: #ecae62; border-color: #ecae62; color: #ffffff;"
+							maxlength="4"></th>
+						<th colspan=5
+							style="background-color: #f5d17e; border-color: #f5d17e; border-top-left-radius: 5px; border-top-right-radius: 5px;"><input
+							type=text id="name2" class="textbox" placeholder="Player2"
+							style="background-color: #f5d17e; border-color: #f5d17e; color: #ffffff;"
+							maxlength="4"></th>
+					</tr>
+					<tr>
+						<!-- @@@@@@@@@@@@@@@@최종 점수-->
+						<th id="player1p" colspan=5 class="resultpw"><input type=text
+							class="result" name="p1_result" value=0 disabled><br>
+							<input type=text class="resultPC" name="p1_rp" value=0 disabled><input
+							type=text class="resultP" value=P disabled> <input
+							type=text class="resultAC" name="p1_ra" value=0 disabled><input
+							type=text class="resultA" value=A disabled></th>
+						<th id="player2p" colspan=5 class="resultpw"><input type=text
+							class="result" name="p2_result" value=0 disabled><br>
+							<input type=text class="resultPC" name="p2_rp" value=0 disabled><input
+							type=text class="resultP" value=P disabled> <input
+							type=text class="resultAC" name="p2_ra" value=0 disabled><input
+							type=text class="resultA" value=A disabled></th>
+					</tr>
+					<tr height="30%">
+						<td colspan="5">
+							<table>
+								<tr align="center">
+									<td><input type=text style="text-align: center;"
+										class="pointtext" id="p1_4" value=0 disabled></td>
+									<td><input type=text style="text-align: center;"
+										class="pointtext" id="p1_3" value=0 disabled></td>
+									<td><input type=text style="text-align: center;"
+										class="pointtext" id="p1_2" value=0 disabled></td>
+									<td><input type=text style="text-align: center;"
+										class="pointtextp" id="p1_P" value=0 disabled></td>
+									<td><input type=text style="text-align: center;"
+										class="pointtexta" id="p1_A" value=0 disabled></td>
+								</tr>
+								<tr align="center">
+									<td><input type=button value="4" class="button"
+										onClick="javascript:this.form.p1_4.value++;pointsum();logpoint(1,4);"></td>
+									<td><input type=button value="3" class="button"
+										onClick="javascript:this.form.p1_3.value++;pointsum();logpoint(1,3);"></td>
+									<td><input type=button value="2" class="button"
+										onClick="javascript:this.form.p1_2.value++;pointsum();logpoint(1,2);"></td>
+									<td><input type=button value="P" class="buttonp"
+										onClick="javascript:this.form.p1_P.value++;pointsum();logpoint(1,'P');"></td>
+									<td><input type=button value="A" class="buttona"
+										onClick="javascript:this.form.p1_A.value++;pointsum();logpoint(1,'A');"></td>
+								</tr>
+							</table>
+						<td colspan="5">
+							<table>
+								<tr align="center">
+									<td><input type=text style="text-align: center;"
+										class="pointtext" id="p2_4" value=0 disabled></td>
+									<td><input type=text style="text-align: center;"
+										class="pointtext" id="p2_3" value=0 disabled></td>
+									<td><input type=text style="text-align: center;"
+										class="pointtext" id="p2_2" value=0 disabled></td>
+									<td><input type=text style="text-align: center;"
+										class="pointtextp" id="p2_P" value=0 disabled></td>
+									<td><input type=text style="text-align: center;"
+										class="pointtexta" id="p2_A" value=0 disabled></td>
+								</tr>
+								<tr align="center">
+									<td><input type=button value="4" class="button"
+										onClick="javascript:this.form.p2_4.value++;pointsum();logpoint(2,4);"></td>
+									<td><input type=button value="3" class="button"
+										onClick="javascript:this.form.p2_3.value++;pointsum();logpoint(2,3);"></td>
+									<td><input type=button value="2" class="button"
+										onClick="javascript:this.form.p2_2.value++;pointsum();logpoint(2,2);"></td>
+									<td><input type=button value="P" class="buttonp"
+										onClick="javascript:this.form.p2_P.value++;pointsum();logpoint(2,'P');"></td>
+									<td><input type=button value="A" class="buttona"
+										onClick="javascript:this.form.p2_A.value++;pointsum();logpoint(2,'A');"></td>
+								</tr>
+							</table>
+				</table>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
